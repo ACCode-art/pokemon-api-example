@@ -1,0 +1,12 @@
+{
+  "name": "fetch-mate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "n/a"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
