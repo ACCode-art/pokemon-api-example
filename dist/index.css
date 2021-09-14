@@ -44,13 +44,16 @@
   padding: 0 2%;
   height: 20vh;
   align-items: center;
-  font-size: 60px;
+  justify-content: center;
+}
+
+.setImage {
+  width: 500px;
 }
 
 .set_btn {
   display: flex;
   align-items: center;
-  height: 50%;
   margin-right: 20px;
   font-size: 20px;
   font-weight: bold;
@@ -68,12 +71,13 @@
 .pokemonCard {
   margin-right: 10px;
   margin-bottom: 10px;
-  animation: fade-in 600ms ease-in-out;
+  width: 280px;
 }
 
 .header-info {
   margin-right: 50px;
   animation: fade-in 600ms ease-in-out;
+  font-size: 60px;
 }
 
 @keyframes fade-in {
@@ -101,4 +105,39 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media (min-width: 768px) and (max-width: 1224px) {
+  .header-info {
+    font-size: 30px;
+  }
+
+  .setImage {
+    width: 400px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .header-info {
+    font-size: 20px;
+  }
+
+  .setImage {
+    width: 250px;
+  }
+
+  .set_btn {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .pokemonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pokemonCard {
+    width: 45%;
+  }
 }

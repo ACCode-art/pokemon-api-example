@@ -44,7 +44,6 @@ function getData(url) {
     .then((response) => response.json())
     .then((data) => {
       pokemonContainer.innerHTML = '';
-      setName.textContent = data.set_name;
       cardsInSet.textContent = `Cards in set: ${data.cards_in_set}`;
       setImage.src = data.set_image;
       data.set_cards.forEach((el) => {
