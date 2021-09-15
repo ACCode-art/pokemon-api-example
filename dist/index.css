@@ -29,7 +29,7 @@ body {
   height: 70%;
   width: 200px;
   padding-left: 5px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
 
@@ -93,11 +93,6 @@ body {
   padding: 5px;
 }
 
-.set_btn:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
 .pokemonCard {
   height: 390px;
   margin-right: 10px;
@@ -105,11 +100,6 @@ body {
   width: 280px;
   transition: 300ms;
   animation: fade-in 600ms ease-in-out;
-}
-
-.pokemonCard:hover {
-  opacity: 0.5;
-  cursor: pointer;
 }
 
 .header-info {
@@ -199,7 +189,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .pokemonCard {
-    width: 47.5%;
+    width: 47%;
     height: auto;
   }
 }

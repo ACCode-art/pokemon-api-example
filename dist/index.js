@@ -98,7 +98,7 @@ function getData(url) {
       setImage.src = data.set_image;
       filter.placeholder = `Search ${data.set_name}...`;
       data.set_cards.forEach((el) => {
-        const HTML = `<img class='pokemonCard' src=${el.pokemon_image}>`;
+        const HTML = `<img loading='lazy' class='pokemonCard' src=${el.pokemon_image}>`;
         pokemonContainer.insertAdjacentHTML('beforeend', HTML);
       });
       currentSet = data.set_cards;
